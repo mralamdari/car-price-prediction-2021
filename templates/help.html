@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Used Car Price Prediction
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-black bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{url_for('index')}}">Home</a>
+            <button class="btn btn-outline-primary navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="text-muted">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layers-fill" viewBox="0 0 16 16">
+                    <path d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4z"/>
+                    <path d="m2.125 8.567-1.86.992a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882l-1.86-.992-5.17 2.756a1.5 1.5 0 0 1-1.41 0l-5.17-2.756z"/>
+                  </svg>
+            </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('help')}}">Help Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('about')}}">About me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{blue}}" class="d-block w-100" alt="Sorry Picture Is not accesable right now.">
+        </div>
+    </div>
+    <div class="jumbotron">
+        <p>
+
+        </p>
+    </div>
+
+    <div>
+        Hello,
+
+        If you don't know what are the meanings of the parameters and how to fill the blank fields,
+        Here I will help you to acknowledge them and fill them carefully to get the best results.
+
+        <p>1.<strong>Width:</strong>Width is the width of the car</p>
+        <p>2.<strong>Curb Weight:</strong> Curb weight is the weight of the vehicle including a full tank of fuel and all standard equipment. It does not include the weight of any passengers, cargo, or optional equipment. Curb weight is considered the closest weight to the actual weight of the vehicle.</p>
+        <p>3.<strong>Engine size:</strong> Engine size is the volume of fuel and air that can be pushed through a car's cylinders and is measured in cubic centimetres (cc). ... For example, a car that has a 1390cc engine would be described as a 1.4 litre. Traditionally, a car with a bigger engine would generate more power than a car with a smaller engine.</p>
+        <p>4.<strong>Horsepower:</strong> Horsepower (hp) is the metric used to indicate the power produced by a car's engine - the higher the number, the more power is sent to the wheels and, in theory, the faster it will go.</p>
+        <p>5.<strong>Highway mpg:</strong>the average a car will get while driving on an open stretch of road without stopping or starting, typically at a higher speed</p>
+        <p>6.<strong>Fuel Economy:</strong> fuel economy Fuel economy is most often measured by the distance a vehicle can travel on a given volume of fuel (or the inverse). fuel economy is measured in vehicle liters per 100 kilometers.</p>
+        <p>7.<strong>City mpg:</strong>he score a car will get on average in city conditions, with stopping and starting at lower speeds.</p>
+        <p>8.<strong>Compression ratio:</strong> The compression ratio is defined as the ratio between the volume of the cylinder with the piston in the bottom position, The higher this ratio, the greater will be the power output from a given engine.</p>    
+    </div>
+</body>
