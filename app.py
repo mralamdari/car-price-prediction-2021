@@ -47,4 +47,4 @@ def results():
     return flask.render_template("results.html", silver=silver_car, res=round(pred[0], 4))
 
 if __name__ == "__main__":
-    app.run()   
+    app.run(debug=False, host="0.0.0.0", port=os.environ.get("PORT", 5000))   
