@@ -7,9 +7,9 @@ app.config["SECRET_KEY"] = "mykey"
 img_folder = os.path.join('static', 'img')
 app.config['UPLOAD_FOLDER'] = img_folder
 
-
-@app.route("/", methods=["POST"])
-@app.route("/index", methods=["POST"])
+@app.route("/")
+# @app.route("/", methods=["POST"])
+# @app.route("/index", methods=["POST"])
 def index():
     red_car = os.path.join(app.config['UPLOAD_FOLDER'], 'red_car.jpg')
     return flask.render_template("index.html", red=red_car)
@@ -47,4 +47,4 @@ def results():
     return flask.render_template("results.html", silver=silver_car, res=round(pred[0], 4))
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=os.environ.get("PORT", 5000))   
+    app.run(debug=False, host="0.0.0.0", port=os.environ.get("PORT", 5000))   
