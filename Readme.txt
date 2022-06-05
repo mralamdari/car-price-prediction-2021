@@ -1,4 +1,4 @@
-#  Car Price Prediction Project
+# Car Price Prediction Project
 
 <p>
 This is a Simple Project that can predict the price of the cars
